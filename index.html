@@ -16,6 +16,10 @@
     <!-- site logo and navigation -->
     <div class="header-container">
       <header>
+        <a class="hamburger" href="#navbar" aria-label="Open main menu">
+          <span class="sr-only">Open main menu</span>
+          <span class="fas fa-bars" aria-hidden="true"></span>
+        </a>
         <div class="logo">
           <h1>
             <a href="index.html">
@@ -24,7 +28,7 @@
             >
           </h1>
         </div>
-        <nav>
+        <nav id="site-navigation">
           <a href="index.html">Projects</a>
           <a href="index.html">About</a>
           <a href="index.html">Contact</a>
@@ -39,6 +43,10 @@
             </span>
           </a>
           <a class="button" href="index.html">Resume</a>
+          <a class="close" href="#" aria-label="Close main menu">
+            <span class="sr-only">Close main menu</span>
+            <span class="fas fa-times" aria-hidden="true"></span>
+          </a>
         </nav>
       </header>
     </div>
@@ -174,5 +182,17 @@
         <small>&copy 2022 Robert Laws. All rights reserved.</small>
       </p>
     </footer>
+    <script>
+      function toggleMenu() {
+        let navLinks = document.querySelector('#site-navigation');
+        navLinks.classList.toggle('open');
+      }
+
+      let hamburger = document.querySelector('.hamburger');
+      let closeButton = document.querySelector('.close');
+
+      hamburger.addEventListener('click', toggleMenu);
+      closeButton.addEventListener('click', toggleMenu);
+    </script>
   </body>
 </html>
