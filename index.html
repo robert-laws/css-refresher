@@ -4,10 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS Refresher</title>
-    <link rel="stylesheet" href="styles/main.css" />
+    <title>CSS Refresher - Example Website</title>
+    <link rel="stylesheet" href="styles/final.css" />
+    <script
+      src="https://kit.fontawesome.com/7328598c19.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
   </head>
   <body>
+    <!-- site logo and navigation -->
+    <div class="header-container">
+      <header>
+        <div class="logo">
+          <h1>
+            <a href="index.html">
+              <span aria-hidden="true" class="fas fa-code"></span>CSS
+              Refresher</a
+            >
+          </h1>
+        </div>
+        <nav>
+          <a href="index.html">Projects</a>
+          <a href="index.html">About</a>
+          <a href="index.html">Contact</a>
+          <a href="index.html">
+            <span aria-hidden="true" class="fa-brands fa-linkedin">
+              <span class="sr-only">LinkedIn</span>
+            </span>
+          </a>
+          <a href="index.html">
+            <span aria-hidden="true" class="fa-brands fa-github-square">
+              <span class="sr-only">GitHub</span>
+            </span>
+          </a>
+          <a class="button" href="index.html">Resume</a>
+        </nav>
+      </header>
+    </div>
+
+    <!-- introduction - personal information and website -->
     <section id="intro">
       <p class="name">Hello, my name is <span>Robert</span></p>
       <h2>I develop websites</h2>
@@ -19,7 +55,50 @@
           >websites that help people learn</a
         >.
       </p>
-      <p>Currently, I an a developer for a College.</p>
+      <p>Currently, I am a web developer for a College.</p>
     </section>
+
+    <!-- contact information -->
+    <div class="gradient"></div>
+    <div class="section-grey">
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <p>
+          I'd be happy to hear from you with opportunities to work on
+          development and design projects.
+        </p>
+        <p>
+          <a class="button button-red" href="mainto:bobcobb@net.com"
+            >Email Me</a
+          >
+        </p>
+      </section>
+    </div>
+    <div class="gradient"></div>
+
+    <!-- site footer -->
+    <footer>
+      <h3>Robert Laws &middot; Web Developer</h3>
+      <div>
+        <a href="index.html">
+          <span aria-hidden="true" class="fa-brands fa-linkedin">
+            <span class="sr-only">LinkedIn</span>
+          </span>
+        </a>
+        <a href="index.html">
+          <span aria-hidden="true" class="fa-brands fa-github-square">
+            <span class="sr-only">GitHub</span>
+          </span>
+        </a>
+        <a href="mainto:bobcobb@net.com">
+          <span class="fa-solid fa-envelope">
+            <span class="sr-only">Email Me</span>
+          </span>
+        </a>
+      </div>
+      <p>
+        <small>&copy 2022 Robert Laws. All rights reserved.</small>
+      </p>
+    </footer>
   </body>
 </html>

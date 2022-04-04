@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Roboto+Serif&display=swap');
+
+/* site branding colors and fonts */
+:root {
+  --black: #191919;
+  --grey: #254450;
+  --blue: #57a4ed;
+  --dark-blue: #1d4857;
+  --light-blue: #b7d8e8;
+  --dark-red: #b64343;
+  --red: #ca5449;
+  --white: #f1f8fb;
+  --font-size: 18px;
+  --sans: 'Libre Franklin', sans-serif;
+  --serif: 'Roboto Serif', serif;
+}
+
+/* site-wide defaults */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--sans);
+  background-color: var(--black);
+  color: var(--white);
+  font-size: var(--font-size);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--dark-blue);
+  transition: color 0.2s ease-in-out;
+}
+
+.button {
+  background-color: var(--dark-blue);
+  padding: 0.5rem 0.5rem 0.2rem;
+  border-radius: 0.25rem;
+}
+
+.button-red {
+  background-color: var(--red);
+  padding-bottom: 0.5rem;
+}
+
+.section-grey {
+  background-color: var(--grey);
+}
+
+.gradient {
+  background: linear-gradient(
+    90deg,
+    rgba(197, 204, 57, 1) 0%,
+    rgba(100, 218, 214, 1) 100%
+  );
+  height: 2px;
+}
+
+/* header */
+.header-container {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+header {
+  padding: 1rem;
+  text-align: center;
+
+  display: flex;
+  flex-flow: row wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* header - logo and main title */
+header .logo {
+  font-family: var(--sans);
+  flex: 0 0 100%;
+}
+
+@media screen and (min-width: 900px) {
+  header {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  header .logo {
+    flex: 0 0 auto;
+    text-align: left;
+    margin-right: auto;
+  }
+}
+
+header h1 {
+  display: inline-block;
+  font-size: 1.6rem;
+}
+
+header h1 [class*='fa-'] {
+  font-size: 100%;
+  padding-right: 0.5rem;
+  color: var(--light-blue);
+}
+
+header h1:hover * {
+  color: var(--dark-blue);
+  transition: color 0.2s ease-in-out;
+}
+
+/* header - site navigation */
+header nav {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.8rem;
+}
+
+header nav a {
+  font-family: var(--serif);
+  text-decoration: none;
+}
+
+header nav [class*='fa-'] {
+  font-size: 1.5rem;
+}
+
+header nav .button:hover {
+  color: var(--blue);
+}
+
+/* intro section */
+#intro {
+  padding: 4rem 1rem 10rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#intro .name {
+  font-family: var(--serif);
+}
+
+#intro .name span {
+  font-family: var(--sans);
+  font-size: 3rem;
+  display: block;
+  color: var(--blue);
+}
+
+#intro h2 {
+  font-size: 2.4rem;
+  font-weight: normal;
+}
+
+#intro a {
+  text-decoration: underline;
+}
+
+#intro a:hover {
+  color: var(--light-blue);
+}
+
+/* contact section */
+#contact {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  color: var(--white);
+}
+
+#contact p {
+  color: var(--white);
+}
+
+#contact p:last-child {
+  padding-top: 2rem;
+}
+
+/* footer */
+footer {
+  width: 500px;
+  padding: 4rem 0;
+  margin: 0 auto;
+}
+
+footer > * {
+  padding: 0;
+  margin: 1.25rem 0;
+}
+
+footer h3 {
+  font-size: 1.5rem;
+  color: var(--white);
+}
+
+footer p,
+footer div,
+footer h3 {
+  text-align: center;
+}
+
+footer p:last-child {
+  font-size: 1.25rem;
+}
+
+footer a {
+  font-size: 1.6rem;
+  margin: 0 0.5rem;
+}
